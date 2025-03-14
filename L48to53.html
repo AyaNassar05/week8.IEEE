@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let start = 10;
+        let end = 100;
+        let exclude = 40;
+
+        for (let i = start; i <= end; i += start) {
+            if (i === exclude) continue;
+            console.log(i);
+        }
+
+
+
+        let star_t = 10;
+        let en_d = 0;
+        let stop = 3;
+
+        for (let i = star_t; i >= stop; i--) {
+            console.log(i < star_t ? "0" + i : i);
+        }
+
+
+        let star__t = 1;
+        let en__d = 6;
+        let breaker = 2;
+
+        for (let i = star__t; i <= en__d; i++) {
+            console.log(i);
+            for (let j = breaker; j <= breaker * breaker; j += breaker) {
+                console.log(`-- ${j}`);
+            }
+        }
+
+
+
+
+        let index = 10;
+        let jump = 2;
+
+        for (; ;) {
+            console.log(index);
+            index -= jump;
+            if (index < jump * jump) break;
+        }
+
+
+
+
+
+        let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+        let letter = "a";
+        let counter = letter.length;
+
+        for (let i = letter.length; i < friends.length; i++) {
+            if (!friends[i].toLowerCase().startsWith(letter)) {
+                console.log(`${counter} => ${friends[i]}`);
+                counter++;
+            }
+        }
+
+
+
+
+
+        let s_tart = 0;
+        let swappedName = "elZerO";
+        let result = "";
+
+        for (let i = s_tart; i < swappedName.length; i++) {
+            result += swappedName[i] === swappedName[i].toUpperCase()
+                ? swappedName[i].toLowerCase()
+                : swappedName[i].toUpperCase();
+        }
+
+        console.log(result); // "ELzERo"
+
+
+
+
+
+        let st_art = 0;
+        let mix = [1, 2, 3, "A", "B", "C", 4];
+
+        for (let i = st_art; i < mix.length; i++) {
+            if (typeof mix[i] === typeof mix[st_art] && mix[i] !== mix[st_art]) {
+                console.log(mix[i]);
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
